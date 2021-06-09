@@ -5,7 +5,7 @@ body {
 h1 {
     color:rgba( 8, 141, 165, 1);
     margin-left:100px;
-    text-shadow: 1px, .5px 4px rgba(0,0,0, 0.6);
+    text-shadow: 1px 5px 4px rgba(0,0,0, 0.6);
 }
 
 .container {
@@ -18,8 +18,8 @@ h1 {
 /*---------------------------------------------
 SELECT ALL SQUARES IN THE ARRAY
 -------------------------------------------------*/
-.container .square:nth-child(-n+4) {
-    background-image:url("../projects/icons/smileyface2.png")
+.container .squares:nth-child(-n+4) {
+    background-image:url("../CSS/icons/smileyface2.png");
     color: #fff;
     float: left;
     width: 100px;
@@ -33,7 +33,7 @@ SELECT ALL SQUARES IN THE ARRAY
     /*---------------------------------------------------------
     SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
     ---------------------------------------------------------*/
-.squares:nth_child(-n+4) p{
+.squares:nth-child(-n+4) p{
     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size:1.5em;
     font-weight:900;
@@ -50,22 +50,22 @@ INDIVIDUALLY SELECT A SQUARE IN THE ARRAY
 .squares:nth-child(2) {
     background:#ab3fdd;
 }
-.square:nth-child(3) {
+.squares:nth-child(3) {
     background: #ae163e;
 }
-.square:nth-child(4) {
+.squares:nth-child(4) {
     background:#00b200;
 }
 /*---------------------------------------------------------------
 HOVER EFFECTS, TRANSLATE, & TRANSORFM EFFECTS
 ---------------------------------------------------------------*/
-.container .square:nth-child(-n+4) :hover {
-    background-image: url("../projects/icons/smileyface1.png");
-    transorm: scale(.5);
+.container .squares:nth-child(-n+4):hover {
+    background-image: url("../CSS/icons/smileyface1.png");
+    transform: scale(.5);
     animation-name: race;
     animation-duration:2.5s;
     animation-iteration-count: infinite;
-    animation-timing-funtion: cubic-bezier(2.5,.2,.3,2);
+    animation-timing-function: cubic-bezier(2.5,.2,.3,2);
 }
 .squares:nth-child(1):hover {
     background:#13b4ff;
@@ -80,9 +80,9 @@ HOVER EFFECTS, TRANSLATE, & TRANSORFM EFFECTS
     background: #77b800;
 }
 .button:hover {
-    background-color: :#33fb14;
+    background-color:#33fb14;
     color:#fff;
-    cursor; pointer;
+    cursor: pointer;
 }
 /*--------------------------------------------------------------------
 ANIMATION EFFECT
@@ -90,8 +90,9 @@ ANIMATION EFFECT
 @keyframes race {
     0%, 100% {
         transform: translateY(0px);
-        background-image:url("../projects/icons/smileyface1.png")
+        background-image:url("../CSS/icons/smileyface1.png")
     }
     50% {
         transform: translateY(330px);
     }
+}
