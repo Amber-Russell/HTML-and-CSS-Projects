@@ -126,7 +126,7 @@ section {
 home section styles
 ==============================================*/
 #home {
-    background: url(../images/planets.jpg) no-repeat 50% 50%;
+    background: url(../images/Thumbnails/planets.jpg) no-repeat 50% 50%;
     background-attachment: fixed;/*so the background image doesnt move*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -218,7 +218,7 @@ Contacts Style
     padding: 12px 12px;
     width: 70%;
     border: 1px solid #808080;
-    margin: 2# auto;
+    margin: 2px auto;
     border-radius: 7px;
     background: rgb(227, 222, 222);
     box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
