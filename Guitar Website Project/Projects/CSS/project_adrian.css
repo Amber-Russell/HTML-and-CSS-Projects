@@ -1,0 +1,14 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+h1 {
+    font-size: larger;
+    font-style: roboto;
+    color: blueviolet;
+}
+img {
+    filter: grayscale(100%);
+}
