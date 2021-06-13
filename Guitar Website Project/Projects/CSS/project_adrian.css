@@ -10,6 +10,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-left: 200px;
+    color: white;
+    font-size: 25px;
 }
 h4, h1 {
     text-align: center;
@@ -37,6 +40,16 @@ p:hover {
     padding-bottom: 20px;
     text-align: center;
 }
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+    float: left;
+}
+li a {
+padding: 10px;
+}
 .navbar a {
     display: block;
     color: #0de;
@@ -50,10 +63,11 @@ p:hover {
     position: relative;
     width: 50%;
 }
-.image {
+.center-image {
     display: block;
-    width: 100%;
+    margin-left: 65%;
     height: auto;
+    margin-bottom: 20px;
 }
 .overlay {
     transition: .5s ease;
@@ -67,8 +81,24 @@ p:hover {
     width: 100%;
     text-align: center;
 }
-.container:hover .overlay {
-    opacity 1;
+.overlay:hover{
+    opacity :1;
+}
+.video-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+    color: white;
+}
+.video {
+    width: 50%;
+    margin: 1px auto;
+    display: block;
 }
 .text {
     color: white;
@@ -82,10 +112,10 @@ p:hover {
     text-align: center;
 }
 .main {
-    margin-top: 30px;
+    margin-top: 30%;
 }
 img {
-    filter: grayscale);
+    filter: grayscale;
     border: cornflowerblue;
     border-radius: 50px 50px;
 }
@@ -112,14 +142,8 @@ tr:nth-child(even) {
     color: darkcyan;
     width: 100%;
 }
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-
-}
 footer {
-    display: table-footer-group;
     text-align: center;
     font-weight: bold;
+    margin-top: 50%;
 }
