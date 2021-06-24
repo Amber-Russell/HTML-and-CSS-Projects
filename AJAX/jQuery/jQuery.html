@@ -10,13 +10,13 @@
     </body>
 
     <script>
-        $(document).ready(function() {
-            $("html").append(
+        $(document).ready(function() {       //$ represents jquery, fumction to document means whole html file.
+            $("html").append(               //this function will append the following block.
                 "<body>\
                     <div id='container'>\
                         <div id='inner'>\
                             <h1>Basic jQuery</h1>\
-                            <p id='1'>Paragraph 1</p>\
+                            <p id='1'>Paragraph 1</p>\      
                             <p id='2'>Paragraph 2</p>\
                             <p id='3'>Paragraph 3</p>\
                             <p id='4'>Paragraph 4</p>\
@@ -25,9 +25,9 @@
                 </body>"
 
             );
-            $("#2").css({"color":"red"});
-            $("#3").click(function() {
-                $('h1').hide();
+            $("#2").css({"color":"red"});       //#2 class to represent 2nd paragraph and add css function
+            $("#3").click(function() {             //when clicking 3rd <p> it will hide <h1> element.
+                $('h1').hide();             
             })
         })
     </script>
