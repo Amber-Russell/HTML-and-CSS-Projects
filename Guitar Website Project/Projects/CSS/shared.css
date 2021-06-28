@@ -19,6 +19,7 @@ html {
         color: #333;
         background-color: #fff;
     }
+
     footer, 
     nav {
         display:block;
@@ -36,7 +37,7 @@ html {
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     }
     h1::after { /*this is the underline*/
-        display: bloack;
+        display: block;
         content:"";
         height: 2px;
         width: 150px;
@@ -179,6 +180,7 @@ Contacts Style
 }
 #contact {
     background-color: #f5f3f3;
+    
 }
 .reservation {
     width: 60%;
